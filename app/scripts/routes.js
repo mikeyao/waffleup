@@ -74,6 +74,14 @@ angular.module('waffleupApp')
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
+      .when('/instructor', {
+        templateUrl: 'views/instructor.html',
+        controller: 'InstructorCtrl'
+      })
+      .when('/student', {
+        templateUrl: 'views/student.html',
+        controller: 'StudentCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

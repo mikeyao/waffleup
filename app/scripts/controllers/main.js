@@ -19,4 +19,11 @@ angular.module('waffleupApp')
 
     $scope.instructorView = $firebaseObject(Ref.child('thumbsStatus'));
 
+    // $scope.studentChoice = 'Up';
+    // $scope.instructorView2 = 'Up';    
+
+    $firebaseObject(Ref.child('studentChoice')).$bindTo($scope, 'studentChoice');
+
+    $scope.instructorView2 = $firebaseObject(Ref.child('studentChoice'));
+
   });

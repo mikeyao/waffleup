@@ -12,5 +12,6 @@ angular.module('waffleupApp', [
     'ngRoute',
     'firebase',
     'firebase.ref',
-    'firebase.auth'
+    'firebase.auth',
+    'ui.bootstrap'
   ]);
